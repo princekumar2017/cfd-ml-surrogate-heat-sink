@@ -1,1 +1,43 @@
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.env
+.venv/
+venv/
+
+# --- Jupyter ---
+*.ipynb_checkpoints
+**/.ipynb_checkpoints/
+
+# --- Data (KEEP PRIVATE) ---
+data/
+data_private/
+**/*.xlsx
+**/*.xls
+**/*.csv
+
+# --- Models (KEEP PRIVATE) ---
+models/
+models_private/
+**/*.pkl
+**/*.joblib
+
+# --- Outputs / Figures ---
+outputs/
+results/
+
+
+# outputs/
+
+# --- Logs ---
+*.log
 
