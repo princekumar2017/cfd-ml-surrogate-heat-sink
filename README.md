@@ -5,10 +5,10 @@
 This repository demonstrates an **industry-oriented machine learning surrogate model**
 trained on **high-fidelity CFD simulations** to rapidly predict:
 
-- **Average Nusselt number (Nū)**
-- **Pressure drop–derived friction factor (f)**
+- **Average Nusselt number (Nū):** indicates heat transfer performance
+- **Pressure drop or friction factor (f):** indicate pumping power required
 
-for **laminar forced convection in porous wavy channels**.
+for **laminar forced convection in partially porous wavy channels**.
 
 The framework replaces thousands of expensive CFD runs with
 **instant ML predictions**, enabling:
@@ -40,9 +40,10 @@ The framework replaces thousands of expensive CFD runs with
 ---
 
 ## Dataset Summary
-- **Base CFD simulations:** 768 cases  
-- **Geometry expansion:** 6 configurations per case  
-- **Total ML samples:** 4,608 (long-form dataset)
+- **Geometry configurations:** 18 (a × Hp × Lw)  
+- **Operating conditions** 256 (Re × Pr × Da × ε)
+  
+- **Total ML samples:** 4,608 physics-resolved cases
 
 Each ML sample corresponds to a **unique thermo-hydraulic state**.
 
@@ -77,7 +78,7 @@ Parity and Residual plots confirm **excellent agreement** with CFD.
 ## Validation
 - 10 unseen CFD cases selected randomly
 - Errors consistently below **1%**
-- Validation includes **dimensionless friction factor**
+- Validation includes **Nusselt number & Friction factor**
 computed from ΔP
 
 <p align="center">
