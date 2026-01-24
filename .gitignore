@@ -1,43 +1,16 @@
-# -------------------------------
-# PRIVATE DATA (DO NOT COMMIT)
-# -------------------------------
+# Data & models
 data_private/
-outputs_private/
-models_private/
-
-# Excel / CSV raw data
 *.xlsx
 *.csv
-
-# -------------------------------
-# MODEL ARTIFACTS
-# -------------------------------
 *.pkl
-*.joblib
 
-# -------------------------------
-# PYTHON CACHE
-# -------------------------------
+# Python
 __pycache__/
 *.pyc
-*.pyo
 
-# -------------------------------
-# JUPYTER
-# -------------------------------
+# Jupyter
 .ipynb_checkpoints/
-*.ipynb~
 
-# -------------------------------
-# OS / IDE
-# -------------------------------
+# OS
 .DS_Store
 Thumbs.db
-.vscode/
-.idea/
-
-# -------------------------------
-# TEMP FILES
-# -------------------------------
-*.log
-*.tmp
