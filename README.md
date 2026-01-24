@@ -66,22 +66,22 @@ Nū, friction factor (f) / Pressure drop
 | Nū | 0.999 | 0.071 | 0.331 |
 | ΔP | 1.000 | 0.0007 | 0.002 |
 
-Parity and validation plots confirm **excellent agreement** with CFD.
+Parity and Residual plots confirm **excellent agreement** with CFD.
 
 <p align="center">
-<img src="figures/ML_Credibility_Parity_Residuals.png" width="45%">
+<img src="figures/ML_Credibility_Parity_Residuals.png" width="80%">
 </p>
 
 ---
 
 ## Validation
 - 10 unseen CFD cases selected randomly
-- Errors consistently below **2%**
+- Errors consistently below **1%**
 - Validation includes **dimensionless friction factor**
 computed from ΔP
 
 <p align="center">
-<img src="figures/Validation_Bars_Nu_and_f.png" width="45%">
+<img src="figures/Validation_ML_vs_CFD.png" width="80%">
 </p>
 
 ---
